@@ -1,5 +1,4 @@
-const btn = document.querySelector("#btn");
-btn.addEventListener("click", () => {
+ function displayJoke() {
     fetch("https://icanhazdadjoke.com/", {
         headers: {
             "Accept": "application/json"
@@ -15,3 +14,6 @@ btn.addEventListener("click", () => {
         });
 
 })
+displayJoke();
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", displayJoke)
