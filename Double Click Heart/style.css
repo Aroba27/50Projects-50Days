@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Oswald', sans-serif;
+    padding: 2rem;
+}
+.image{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 2rem;
+    background: url('roberto-nickson-Yp9FdEqaCdk-unsplash.jpg') no-repeat center center/cover;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.fa-heart{
+    color: red;
+}
+.image .fa-heart{
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    animation: heart 0.7s linear;
+}
+@keyframes heart {
+    to{
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
+}
